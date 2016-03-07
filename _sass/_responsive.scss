@@ -1,0 +1,220 @@
+@media screen and (max-width: 759px){
+
+  body{
+    main{
+      header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left:0;
+        transition: all 0.2s linear;
+
+        input[type=checkbox] + label[for='test']{
+          height: 20px;
+          width:20px;
+          position: absolute;
+          left: 20px;
+          top: 16px;
+          content:"";
+          background:url(../images/nav-icon.png) no-repeat;
+          cursor:pointer;
+          margin-bottom: 0;
+        }
+
+        input[type=checkbox]:checked + label[for='test']{
+          height: 32px;
+          width:32px;
+          position: absolute;
+          left: 15px;
+          top: 12px;
+          content:"";
+          background:url(../images/nav-close.png) no-repeat;
+          cursor:pointer;
+          margin-bottom: 0;
+        }
+   
+        nav{
+            position: fixed;
+            height: 100%;
+            max-width: 191px;
+            z-index: 1;
+            left: -100%;
+            background: black;
+            transition: all 0.2s linear;
+
+          .pres{
+            width: 100%;
+            li,a{
+              width:100%;
+            }
+          }
+          .social{
+            
+          }
+          .copyr{
+            display:block;
+            position: absolute;
+            bottom:0;
+            left:0;
+            padding: 0 20px;
+            margin-bottom: 0;
+          }
+          .copyr p{
+            line-height: 20px;
+          }
+        }
+      }
+      #header2{
+        position: relative;
+        top: 53px;
+      }
+      footer{
+        transition: all 0.2s linear;
+        display: none;
+      }
+      article{
+        position: relative;
+        top: 52px;
+        right: 0;
+        left: 0;
+        padding: 20px;
+        transition: all 0.2s linear;
+        .info{
+          margin-top: 20px;
+        }
+        .available{
+          h2::before{
+            content: '';
+            border-bottom: 2px solid black;
+            display: block;
+            margin-bottom: 15px;
+          }
+          h2::after{
+            content: '';
+            border-bottom: 2px solid black;
+            display: block;
+            margin-top: 15px;
+          }
+        }
+      }
+      .page.contact{
+        .bot{
+          .conR{
+            display:block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 591px){
+  .page.home {
+    .info{
+      ul{
+        width: 100%;
+        .pane{
+          clear: both;
+          h2{
+            margin-top: 20px;
+          } 
+        }
+      }
+      .col{
+        display:none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px){
+
+  header{
+    nav{ 
+      .pres,.social{
+        position: absolute;
+        top: 0;
+      }
+      .social{
+        right: 0;
+      }
+      .copyr{
+        display:none;
+      }
+    }
+  }
+  #header2{
+    display: none;
+  }
+  article{
+    padding: 20px 20px 72px 20px;
+    .info{
+      margin-top: 50px;
+    }
+  }
+  .page.about{
+    .deuxP{
+      display: none;
+    }
+  }
+  .page.contact{
+    .bot{
+      .conR{
+        display:none;
+      }
+    }
+  }
+  .page.portfolio{
+    .item:nth-child(7),.item:nth-child(8){
+      //margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .page.portfolio{
+    .item{
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .page.portfolio{
+    .item{
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 959px){
+  article{
+  max-width: 760px;
+  margin: 0 auto;
+  }
+  .page.home{
+    max-width: 100%;
+  }
+  .page.portfolio {
+    ul li{
+      display: inline-block;
+      max-width: 49.7%;
+    }
+  }
+}
+
+@media screen and (min-width: 960px){
+  article{
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .page.home{
+    max-width: 100%;
+  }
+  .page.portfolio{
+    ul li{
+      display: inline-block;
+      max-width: 350px;
+    }
+  }
+}

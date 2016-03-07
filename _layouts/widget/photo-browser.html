@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    {% include head.html %}
+    <link rel="canonical" href="madmous.com/portfolio/photo-browser" />
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main>
+      <article class="page project">
+        <section class="intro text-center">
+          <img src="/images/ajax.png" alt="">
+          <h3>Photo Browser</h3>
+        </section>
+        <section class="bot">
+          <div class="grid-container centered">
+            <div class="grid-100">
+              <div class="contained">
+                <div class="grid-100">
+                  <div class="heading">
+                    <h1>Flickr Photo Search</h1>
+                    <form>
+                      <label for="search">Type a search term</label>
+                      <input type="search" name="search" id="search">
+                      <input type="submit" value="Search" id="submit">
+                    </form>
+                  </div>
+                </div>
+                <ul id="photos">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    {% include scripts.html %}
+    <script src="/js/appproj1.js"></script>
+  </body>
+</html>

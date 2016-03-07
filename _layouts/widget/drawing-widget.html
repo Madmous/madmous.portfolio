@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    {% include head.html %}
+    <link rel="canonical" href="madmous.com/portfolio/drawing-widget" />
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main>
+      <article class="page project3">
+        <section class="intro text-center">
+          <img src="/images/jquery.png" alt="">
+          <h3>Drawing Widget</h3>
+        </section>
+        <section class="bot">
+          <canvas width="600" height="400"></canvas>
+          <div class="controls">
+            <ul>
+              <li class="red"></li>
+              <li class="blue"></li>
+              <li class="yellow"></li>
+            </ul>
+            <button id="revealColorSelect">New Color</button>
+            <div id="colorSelect">
+              <span id="newColor"></span>
+              <div class="sliders">
+                <p>
+                  <label for="red">Red</label>
+                  <input id="red" name="red" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                  <label for="green">Green</label>
+                  <input id="green" name="green" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                  <label for="blue">Blue</label>
+                  <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                </p>
+              </div>
+              <div>
+              <button id="addNewColor">Add Color</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    {% include scripts.html %}
+    <script src="/js/appproj3.js"></script>
+  </body>
+</html>

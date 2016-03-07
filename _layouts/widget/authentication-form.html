@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    {% include head.html %}
+    <link rel="canonical" href="madmous.com/portfolio/authentication-form" />
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main>
+      <article class="page project4">
+        <section class="intro text-center">
+          <img src="/images/jquery.png" alt="">
+          <h3>Authentication Form</h3>
+        </section>
+        <section class="bot">
+          <form>
+            <p>
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text">
+            </p>
+            <p>
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password">
+              <span>Enter a password longer than 8 characters</span>
+            </p>
+            <p>
+              <label for="confirm_password">Confirm Password</label>
+              <input id="confirm_password" name="confirm_password" type="password">
+              <span>Please confirm your password</span>
+            </p>
+          </form>
+        </section>
+      </article>
+    </main>
+    {% include scripts.html %}
+    <script src="/js/appproj4.js"></script>
+  </body>
+</html>
